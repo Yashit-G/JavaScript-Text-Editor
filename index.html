@@ -14,6 +14,8 @@
   <style></style>
   <body>
     <div class="container">
+      <!-- this div is for the options that my -->
+      <!-- text editor will give -->
       <div class="options">
         <!-- for bold -->
         <button id="bold" class="option-button format">
@@ -51,7 +53,7 @@
         </button>
 
         <!-- for createlink -->
-        <button id="createLink" class="advance-option-button">
+        <button id="createLink" class="advance-options-button">
           <i class="fa-solid fa-link"></i>
         </button>
 
@@ -84,7 +86,37 @@
         <button id="outdent" class="option-button spacing">
           <i class="fa-solid fa-outdent"></i>
         </button>
+
+        <!-- for selecting the size of the text -->
+        <select id="formatBlock" class="advance-options-button">
+          <option value="H1">H1</option>
+          <option value="H1">H2</option>
+          <option value="H1">H3</option>
+          <option value="H1">H4</option>
+          <option value="H1">H5</option>
+          <option value="H1">H6</option>
+        </select>
+
+        <!-- for selecting the font name -->
+        <select name="" id="fontName" class="advance-options-button"></select>
+
+        <!-- for selecting the font size -->
+        <select name="" id="fontSize" class="advance-options-button"></select>
+
+        <!--input for selecting the color for the text  -->
+        <div class="input-wrapper">
+          <input type="color" class="advance-options-button" id="foreColor" />
+          <label for="foreColor">Font Color</label>
+        </div>
+
+        <!-- input for selecting the color of the background -->
+        <div class="input-wrapper">
+          <input type="color" class="advance-options-button" id="backColor" />
+          <label for="backColor">Hightlight Color</label>
+        </div>
       </div>
+
+      <!-- this div is where the user will edit its content -->
     </div>
     <script src="index.js"></script>
   </body>
